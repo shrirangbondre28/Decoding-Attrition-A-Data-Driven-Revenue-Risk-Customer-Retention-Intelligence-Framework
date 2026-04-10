@@ -64,7 +64,7 @@ This project integrates **three relational datasets** totaling **1.35 million ro
 │ city                │         │ product_category      │
 │ acquisition_channel │         │ payment_method        │
 │ is_active           │         │ order_status          │
-│ churn_flag ★        │         │ discount_used         │
+│ churn_flag ★        │         │ discount_used        │
 └────────┬────────────┘         └──────────────────────┘
          │
          │ 1-to-1
@@ -113,7 +113,7 @@ All three tables are unified into a single `customer_360` analytical view — on
 
 ### The Scale of the Problem
 
-> **1 in 4 customers churns.** That translates to ₹90.3 Crore in lost completed-order revenue — revenue that walked out the door and is now being spent with a competitor.
+> **1 in 4 customers churns.** That translates to ₹90.3 Crore in lost completed order revenue, revenue that walked out the door and is now being spent with a competitor.
 
 Beyond direct revenue loss, each churned customer represents a wasted acquisition cost. At an estimated ₹500 per acquired customer across 112,325 churned customers, that's an additional **₹5.6 Crore in stranded acquisition spend.**
 
