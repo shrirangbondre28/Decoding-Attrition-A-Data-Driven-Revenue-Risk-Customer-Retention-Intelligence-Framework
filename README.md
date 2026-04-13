@@ -146,6 +146,8 @@ Beyond direct revenue loss, each churned customer represents a wasted acquisitio
 
 ---
 
+## Tech Stack :
+PostgreSQL, Power BI, Python, SQL, Machine Learning
 ## 4. Insights Deep Dive
 
 ### Insight 1: The Zero Order Problem, Biggest Silent Churn Segment
