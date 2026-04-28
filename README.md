@@ -11,6 +11,7 @@ model using a SQL-first, analytics engineering approach.
 3. [Executive Summary](#3-executive-summary)
 4. [Insights Deep Dive](#4-insights-deep-dive)
 5. [Recommendations](#5-recommendations)
+6. [Dashboard Report Pages](#6-dashboard-report-pages)
 
 ## 1. Background and Overview
 
@@ -255,3 +256,16 @@ Net ROI: ₹19.3 Crore return on ₹6.2 Crore investment = 3.1× ROI
 | 6 | Audit returns & cancellations process | Month 2 | Recover ₹90 Crore leakage |
 
 ---
+## 6. Dashboard Report Pages
+### Executive View : 
+<img width="1063" height="636" alt="image" src="https://github.com/user-attachments/assets/63684a1f-1255-47ab-8bd6-619a47b72d10" />
+
+### Customer Behaviour : 
+<img width="1078" height="633" alt="image" src="https://github.com/user-attachments/assets/4179be3e-3845-416d-bff0-6f8787f5515f" />
+
+### Revenue Impact :
+<img width="1296" height="721" alt="image" src="https://github.com/user-attachments/assets/a229cf27-1e81-43a5-868a-682783ec75b9" />
+
+### Risk Segmentation : 
+<img width="1295" height="732" alt="image" src="https://github.com/user-attachments/assets/d30a0379-1aef-4039-828a-cecb5d55a996" />
+
