@@ -1,7 +1,7 @@
 # Decoding-Attrition-A-Data-Driven-Revenue-Risk-Customer-Retention-Intelligence-Framework
 
 ## 📌Project Overview
-An e-commerce company with 450,000 customers was experiencing a ~24.96% churn rate, putting over ₹1.1 billion in annual revenue at risk.
+An e-commerce company with 450,000 customers was experiencing a ~24.96% churn rate, putting over $1.1 billion in annual revenue at risk.
 This project delivers a complete, end to end churn intelligence system, from raw CSV files to an interactive Power BI dashboard and a machine learning prediction 
 model using a SQL-first, analytics engineering approach.
 
@@ -59,13 +59,13 @@ This project integrates **three relational datasets** totaling **1.35 million ro
 │     customers       │         │        orders        │
 │─────────────────────│         │──────────────────────│
 │ customer_id (PK)  ──┼──1───*──┤ order_id (PK)        │
-│ signup_date         │         │ customer_id (FK)      │
-│ gender              │         │ order_date            │
-│ age                 │         │ order_value           │
-│ city                │         │ product_category      │
-│ acquisition_channel │         │ payment_method        │
-│ is_active           │         │ order_status          │
-│ churn_flag ★        │         │ discount_used        │
+│ signup_date         │         │ customer_id (FK)     │
+│ gender              │         │ order_date           │
+│ age                 │         │ order_value          │
+│ city                │         │ product_category     │
+│ acquisition_channel │         │ payment_method       │
+│ is_active           │         │ order_status         │
+│ churn_flag ★        │         │ discount_used        |
 └────────┬────────────┘         └──────────────────────┘
          │
          │ 1-to-1
@@ -103,9 +103,9 @@ All three tables are unified into a single `customer_360` analytical view — on
 | Total Customers Analyzed | 450,000 |
 | **Overall Churn Rate** | **24.96%** |
 | **Total Churned Customers** | **112,325** |
-| Total Completed Revenue | ₹3,620,694,118 |
-| **Revenue Lost to Churn** | **₹903,141,758** (~₹90.3 Crore) |
-| Avg Revenue per Churned Customer | ₹8,040 |
+| Total Completed Revenue | $3,620,694,118 |
+| **Revenue Lost to Churn** | **$903,141,758** (~$90.3 Million) |
+| Avg Revenue per Churned Customer | $8,040 |
 | Customers Who Never Ordered | 165,565 (36.8%) |
 | Discount Usage Rate | 40.0% of all orders |
 | Avg Days Since Last Login | 181.8 days |
@@ -114,9 +114,9 @@ All three tables are unified into a single `customer_360` analytical view — on
 
 ### The Scale of the Problem
 
-> **1 in 4 customers churns.** That translates to ₹90.3 Crore in lost completed order revenue, revenue that walked out the door and is now being spent with a competitor.
+> **1 in 4 customers churns.** That translates to $90.3 Million in lost completed order revenue, revenue that walked out the door and is now being spent with a competitor.
 
-Beyond direct revenue loss, each churned customer represents a wasted acquisition cost. At an estimated ₹500 per acquired customer across 112,325 churned customers, that's an additional **₹5.6 Crore in stranded acquisition spend.**
+Beyond direct revenue loss, each churned customer represents a wasted acquisition cost. At an estimated ₹500 per acquired customer across 112,325 churned customers, that's an additional **$5.6 Million in stranded acquisition spend.**
 
 ---
 
@@ -136,14 +136,14 @@ Beyond direct revenue loss, each churned customer represents a wasted acquisitio
 
 ### Revenue Breakdown
 
-| Revenue Type | Amount (₹) | Share |
+| Revenue Type | Amount ($) | Share |
 |---|---|---|
-| Completed Orders —> Retained Customers | ~₹2,717,552,360 | 75.1% |
-| Completed Orders —> Churned Customers | ₹903,141,758 | 24.9% |
-| Revenue Leakage (Returns) | ₹456,982,874 | — |
-| Revenue Leakage (Cancellations) | ₹447,304,097 | — |
+| Completed Orders —> Retained Customers | ~$2,717,552,360 | 75.1% |
+| Completed Orders —> Churned Customers | $903,141,758 | 24.9% |
+| Revenue Leakage (Returns) | $456,982,874 | — |
+| Revenue Leakage (Cancellations) | $447,304,097 | — |
 
-**Total revenue leakage from returns + cancellations alone: ₹90.4 Crore** — nearly equal to the churn revenue loss, representing a separate but related problem.
+**Total revenue leakage from returns + cancellations alone: $90.4 Million** — nearly equal to the churn revenue loss, representing a separate but related problem.
 
 ---
 
@@ -183,11 +183,11 @@ These customers signed up but never converted, they are functionally churned fro
 
 | Product Category | Churn Rate | Completed Revenue |
 |---|---|---|
-| Beauty | 25.14% | ₹ Highest |
+| Beauty | 25.14% | $ Highest |
 | Electronics | 25.04% | High |
 | Fashion | 24.85% | Mid |
 | Home | 24.88% | Mid |
-| Sports | 24.77% | ₹ Lowest |
+| Sports | 24.77% | $ Lowest |
 
 **What this means:** Beauty is both the highest-revenue category and the highest churn category. Beauty purchases are inherently repeat purchase driven (consumables), making retention critical in this category specifically.
 
@@ -198,15 +198,15 @@ These customers signed up but never converted, they are functionally churned fro
 ### Insight 4: Revenue Leakage is a Hidden Second Crisis
 
 ```
-Returns Revenue:       ₹456,982,874
-Cancellations Revenue: ₹447,304,097
+Returns Revenue:       $456,982,874
+Cancellations Revenue: $447,304,097
 ─────────────────────────────────────
-Total Leakage:         ₹904,286,971
+Total Leakage:         $904,286,971
 ```
 
 **What this means:** Revenue leakage from returns and cancellations is nearly **equal in size to the churn revenue loss.** These are two parallel crises happening simultaneously.
 
-**Business implication:** Any revenue recovery strategy must address both. Cancellations at ₹44.7 Crore suggest checkout friction or second thought behavior, this warrants abandoned cart and checkout UX analysis.
+**Business implication:** Any revenue recovery strategy must address both. Cancellations at $44.7 Mn suggest checkout friction or second thought behavior, this warrants abandoned cart and checkout UX analysis.
 
 ---
 
@@ -229,18 +229,18 @@ Every customer is classified into one of four risk tiers based on their behavior
 
 ```
 Investment Required (estimated):
-  Re-engagement campaign (High + Critical tier): ₹150 per customer × 240,000 = ₹3.6 Crore
-  VIP program setup and ongoing cost:             ₹200 per customer × 130,000 = ₹2.6 Crore
-  Total Retention Investment:                                                    ₹6.2 Crore
+  Re-engagement campaign (High + Critical tier): $150 per customer × 240,000 = $3.6 Mn
+  VIP program setup and ongoing cost:            $200 per customer × 130,000 = $2.6 Mn
+  Total Retention Investment:                                                    ₹6.2 Mn
 
 Projected Return (conservative 10% success rate on at-risk tiers):
-  Retained revenue from 10% of High + Critical:  24,000 customers × ₹8,040 = ₹19.3 Crore
-  Preserved revenue from Low tier protection:     retain 95% of ₹ top segment
+  Retained revenue from 10% of High + Critical:  24,000 customers × $8,040 = $19.3 Crore
+  Preserved revenue from Low tier protection:     retain 95% of $ top segment
 
-Net ROI: ₹19.3 Crore return on ₹6.2 Crore investment = 3.1× ROI
+Net ROI: $19.3 Mn return on $6.2 Crore investment = 3.1× ROI
 ```
 
-> Every ₹1 spent on retention generates ₹3.10 in preserved revenue compared to ₹3.33 cost to acquire a replacement customer with no revenue guarantee.
+> Every $1 spent on retention generates $3.10 in preserved revenue compared to $3.33 cost to acquire a replacement customer with no revenue guarantee.
 
 ---
 
@@ -253,7 +253,7 @@ Net ROI: ₹19.3 Crore return on ₹6.2 Crore investment = 3.1× ROI
 | 3 | Deploy re-engagement campaign for 60–180 day inactive | Week 3–4 | Recover High tier customers |
 | 4 | Launch VIP program for Low tier customers | Month 2 | Protect top revenue base |
 | 5 | Integrate churn_probability scores into Power BI alerts | Month 2–3 | Ongoing monitoring system |
-| 6 | Audit returns & cancellations process | Month 2 | Recover ₹90 Crore leakage |
+| 6 | Audit returns & cancellations process | Month 2 | Recover $90 Mn leakage |
 
 ---
 ## 6. Dashboard Report Pages
