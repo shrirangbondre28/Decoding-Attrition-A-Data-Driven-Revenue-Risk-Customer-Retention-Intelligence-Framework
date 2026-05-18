@@ -267,5 +267,6 @@ Net ROI: $19.3 Mn return on $6.2 Crore investment = 3.1× ROI
 <img width="1296" height="721" alt="image" src="https://github.com/user-attachments/assets/a229cf27-1e81-43a5-868a-682783ec75b9" />
 
 ### Risk Segmentation : 
-<img width="1295" height="732" alt="image" src="https://github.com/user-attachments/assets/d30a0379-1aef-4039-828a-cecb5d55a996" />
+<img width="603" height="484" alt="Screenshot 2026-05-01 155918" src="https://github.com/user-attachments/assets/f2ab18a1-292a-49c2-a951-1e7d6d9afbc8" />
+
 
